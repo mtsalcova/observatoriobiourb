@@ -1,5 +1,8 @@
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import defaultTheme from 'styles/defaultTheme';
+import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
+import { ThemeProvider } from 'styled-components';
 
 import GlobalStyles from 'styles/global';
 
@@ -16,8 +19,12 @@ function App({ Component, pageProps }: AppProps) {
         <meta name="theme-color" content="#fff" />
         {/* Add favicon here */}
       </Head>
-      <GlobalStyles />
-      <Component {...pageProps} />
+      <MuiThemeProvider theme={defaultTheme}>
+        <ThemeProvider theme={defaultTheme}>
+          <GlobalStyles />
+          <Component {...pageProps} />
+        </ThemeProvider>
+      </MuiThemeProvider>
     </>
   );
 }

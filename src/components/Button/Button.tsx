@@ -1,9 +1,18 @@
 import ButtonCore from '@material-ui/core/Button';
 
-const Button = () => {
+interface Props {
+  color?: any;
+  variant?: any;
+}
+
+const Button: React.FC<Props> = ({
+  color = 'primary',
+  variant = 'outlined',
+  children
+}) => {
   return (
-    <ButtonCore variant="contained" color="primary">
-      Hello World
+    <ButtonCore variant={variant} color={color}>
+      {children}
     </ButtonCore>
   );
 };

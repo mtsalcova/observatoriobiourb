@@ -1,10 +1,11 @@
-import { Button } from 'components';
+import { Button, Header } from 'components';
+import { BannerSearch } from 'layouts';
 
 export default function Home() {
   return (
     <>
-      <h1>Teste</h1>
-      <Button />
+      <Header />
+      <BannerSearch />
     </>
   );
 }
