@@ -7,7 +7,7 @@ interface Props {
 
 const Button: React.FC<Props> = ({
   color = 'primary',
-  variant = 'outlined',
+  variant = 'contained',
   children
 }) => {
   return (

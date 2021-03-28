@@ -14,6 +14,8 @@ const GlobalStyles = createGlobalStyle`
   body {
     font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;
+    color: #7d7c83;
+    line-height: 1.5;
   }
 
   a {
