@@ -5,7 +5,7 @@ interface Props {
   color?: string;
 }
 
-const Title: React.FC<Props> = ({ variant, children }) => {
+const Title: React.FC<Props> = ({ variant, color, children }) => {
   return <>{variant === 'subtitle' && <Subtitle>{children}</Subtitle>}</>;
 };
 

@@ -1,11 +1,13 @@
-import { Box, Title, Wrapper, Photos } from './sectionPhotos.style';
+import { Box, Subtitle, Wrapper, Photos } from './sectionPhotos.style';
 import { PolaroidPhoto } from 'components';
 
 const SectionPhotos = () => {
   return (
     <Box>
       <Wrapper>
-        <Title variant="subtitle">Fotos</Title>
+        <Subtitle variant="h2" color="textPrimary">
+          Fotos
+        </Subtitle>
         <p>
           Use a hashtag <strong>#observatoriobiourb</strong> no Instagram
         </p>

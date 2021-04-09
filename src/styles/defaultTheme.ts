@@ -12,10 +12,21 @@ const defaultTheme = createMuiTheme({
       light: '#A9D6E5',
       dark: '#61A5C2',
       contrastText: '#7d7c83'
+    },
+    text: {
+      primary: '#fff',
+      secondary: '#7d7c83'
     }
   },
   typography: {
     htmlFontSize: 10
+  },
+  overrides: {
+    MuiTypography: {
+      h2: {
+        fontSize: '4rem'
+      }
+    }
   },
   spacing: 4
 });

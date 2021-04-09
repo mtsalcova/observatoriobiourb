@@ -1,5 +1,10 @@
 import { Button, Header } from 'components';
-import { BannerSearch, SectionAbout, SectionPhotos } from 'layouts';
+import {
+  BannerSearch,
+  SectionAbout,
+  SectionLatestNews,
+  SectionPhotos
+} from 'layouts';
 
 export default function Home() {
   return (
@@ -8,6 +13,7 @@ export default function Home() {
       <BannerSearch />
       <SectionAbout />
       <SectionPhotos />
+      <SectionLatestNews />
     </>
   );
 }

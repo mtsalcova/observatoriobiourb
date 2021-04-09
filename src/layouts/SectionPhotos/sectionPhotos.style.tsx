@@ -1,11 +1,14 @@
 import styled from 'styled-components';
-import { Title as TitleCore, Wrapper as WrapperCore } from 'components';
+import { Wrapper as WrapperCore } from 'components';
 import defaultTheme from 'styles/defaultTheme';
+import Typography from '@material-ui/core/Typography';
 
 const { spacing } = defaultTheme;
 
-export const Title = styled(TitleCore)`
-  text-align: center;
+export const Subtitle = styled(Typography)`
+  && {
+    margin-bottom: ${spacing(1)}px;
+  }
 `;
 
 export const Box = styled.section`
@@ -30,4 +33,8 @@ export const Photos = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
+
+  > div {
+    margin-bottom: ${spacing(6)}px;
+  }
 `;
