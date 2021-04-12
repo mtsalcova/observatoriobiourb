@@ -5,4 +5,7 @@ export * from './Title/Title';
 export * from './TextField/TextField';
 export * from './PolaroidPhoto/PolaroidPhoto';
 export * from './ImageMediaCard/ImageMediaCard';
-export * from './Subtitle/Subtitle';
+export * from './Footer/Footer';
+export * from './AboveTheFold/AboveTheFold';
+export * from './PageContainer/PageContainer';
+export * from './RaisedBox/RaisedBox';

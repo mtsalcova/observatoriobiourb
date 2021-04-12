@@ -1,22 +1,44 @@
-import { Box, Wrapper, Menu } from './header.style';
-import Link from '@material-ui/core/Link';
+import { Box, Wrapper, Menu, BoxLogo } from './header.style';
+import { Link as MenuItem } from '@material-ui/core';
+import Link from 'next/link';
+import Image from 'next/image';
 
-import { Button } from './../../components/';
+import { Button } from 'components';
 
 const Header = () => {
   return (
     <Box>
       <Wrapper>
-        <div>{/* <img width="200px" src="/images/teste.png" /> */}</div>
+        <BoxLogo>
+          <Link href="/">
+            <Image
+              src="/images/observatorio-da-biodiversidade-urbana-logo.png"
+              alt="Fotos de Animais, Árvores e uma Lupa"
+              width={150}
+              height={114.34}
+            />
+          </Link>
+        </BoxLogo>
         <Menu>
-          <Link href="#">Sobre</Link>
-          <Link href="#">Dist.Geográfica</Link>
-          <Link href="#">Links úteis</Link>
-          <Link href="#">Downloads</Link>
-          <Link href="#">Fotos</Link>
-          <Button color="primary" variant="contained">
+          <Link href="/sobre">
+            <MenuItem>Sobre</MenuItem>
+          </Link>
+          <MenuItem href="#">Dist.Geográfica</MenuItem>
+          <Link href="/links-uteis">
+            <MenuItem>Links úteis</MenuItem>
+          </Link>
+          <Link href="/noticias">
+            <MenuItem>Notícias</MenuItem>
+          </Link>
+          <Link href="/downloads">
+            <MenuItem>Downloads</MenuItem>
+          </Link>
+          <Link href="/fotos">
+            <MenuItem>Fotos</MenuItem>
+          </Link>
+          {/* <Button color="primary" variant="contained">
             Login
-          </Button>
+          </Button> */}
         </Menu>
       </Wrapper>
     </Box>

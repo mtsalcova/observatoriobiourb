@@ -1,4 +1,4 @@
-import { Button, Header } from 'components';
+import { Header, Footer } from 'components';
 import {
   BannerSearch,
   SectionAbout,
@@ -14,6 +14,7 @@ export default function Home() {
       <SectionAbout />
       <SectionPhotos />
       <SectionLatestNews />
+      <Footer />
     </>
   );
 }

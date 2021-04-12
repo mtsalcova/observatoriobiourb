@@ -23,6 +23,9 @@ const defaultTheme = createMuiTheme({
   },
   overrides: {
     MuiTypography: {
+      h1: {
+        fontSize: '5rem'
+      },
       h2: {
         fontSize: '4rem'
       }

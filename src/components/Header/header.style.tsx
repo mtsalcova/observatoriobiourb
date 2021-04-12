@@ -17,16 +17,22 @@ export const Wrapper = styled(WrapperCore)`
   align-content: center;
 `;
 
+export const BoxLogo = styled.div`
+  padding-top: 10px;
+  cursor: pointer;
+`;
+
 export const Menu = styled.nav`
   display: flex;
   align-items: center;
 
   > a {
     font-size: 1.8rem;
+    cursor: pointer;
   }
 
   > button,
   > a {
-    margin-left: ${({ theme }) => theme.spacing(9)}px;
+    margin-left: ${({ theme }) => theme.spacing(6)}px;
   }
 `;

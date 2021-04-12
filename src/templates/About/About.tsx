@@ -1,15 +1,18 @@
-import { Button } from 'components';
-import { Box, Wrapper, TextBox, Subtitle } from './sectionAbout.style';
-import Link from 'next/link';
+import { Header, Footer, AboveTheFold, RaisedBox } from 'components';
+import { Typography } from '@material-ui/core';
+import { Content } from './about.style';
 
-const SectionAbout = () => {
+const AboutTemplate = () => {
   return (
-    <Box>
-      <Wrapper>
-        <TextBox>
-          <Subtitle variant="h2" color="textPrimary">
-            Sobre nós
-          </Subtitle>
+    <>
+      <Header />
+      <AboveTheFold>
+        <Typography variant="h1" color="textPrimary">
+          Sobre nós
+        </Typography>
+      </AboveTheFold>
+      <Content>
+        <RaisedBox>
           <p>
             Somos uma plataforma digital que busca reunir todo conteúdo
             existente a respeito da biodiversidade urbana em todo o Brasil, a
@@ -19,13 +22,11 @@ const SectionAbout = () => {
             científica, como uma ferramenta para a conservação e valorização da
             biodiversidade.
           </p>
-          <Link href="/sobre">
-            <Button>Saiba mais</Button>
-          </Link>
-        </TextBox>
-      </Wrapper>
-    </Box>
+        </RaisedBox>
+      </Content>
+      <Footer />
+    </>
   );
 };
 
-export { SectionAbout };
+export { AboutTemplate };

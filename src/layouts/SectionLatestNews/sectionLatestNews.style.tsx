@@ -26,3 +26,9 @@ export const BoxNews = styled.div`
   justify-content: center;
   width: 100%;
 `;
+
+export const BoxActions = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: ${spacing(20)}px;
+`;

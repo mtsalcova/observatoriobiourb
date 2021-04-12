@@ -7,7 +7,12 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { Card } from './imageMediaCard.style';
 
-const ImageMediaCard = () => {
+interface Props {
+  title: string;
+  paragraph?: string;
+}
+
+const ImageMediaCard = ({ title, paragraph }: Props) => {
   return (
     <Card>
       <CardActionArea>
@@ -20,12 +25,13 @@ const ImageMediaCard = () => {
         />
         <CardContent>
           <Typography color="primary" gutterBottom variant="h5" component="h2">
-            Lorem Ipsum
+            {title}
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography>
+          {paragraph && (
+            <Typography variant="body2" color="textSecondary" component="p">
+              {paragraph}
+            </Typography>
+          )}
         </CardContent>
       </CardActionArea>
       {/* <CardActions>

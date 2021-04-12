@@ -5,6 +5,7 @@ import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
 import { ThemeProvider } from 'styled-components';
 
 import GlobalStyles from 'styles/global';
+import { PageContainer } from 'components';
 
 function App({ Component, pageProps }: AppProps) {
   return (
@@ -22,7 +23,9 @@ function App({ Component, pageProps }: AppProps) {
       <MuiThemeProvider theme={defaultTheme}>
         <ThemeProvider theme={defaultTheme}>
           <GlobalStyles />
-          <Component {...pageProps} />
+          <PageContainer>
+            <Component {...pageProps} />
+          </PageContainer>
         </ThemeProvider>
       </MuiThemeProvider>
     </>

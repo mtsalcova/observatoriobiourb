@@ -1,13 +1,21 @@
 import { Box, Details } from './polaroidPhoto.style';
+import Image from 'next/image';
 
-const PolaroidPhoto = () => {
+interface Props {
+  imageSrc: string;
+  link: string;
+}
+
+const PolaroidPhoto = ({ imageSrc, link }: Props) => {
   return (
-    <Box>
-      <img src="https://via.placeholder.com/270x150" />
-      <Details>
-        <strong>@mtsalcova</strong>
-      </Details>
-    </Box>
+    <a href={link} target="_blank" rel="noreferrer">
+      <Box>
+        <Image src={imageSrc} width={240} height={240} />
+        {/* <Details>
+            <strong>@mtsalcova</strong>
+          </Details> */}
+      </Box>
+    </a>
   );
 };
 

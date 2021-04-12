@@ -6,12 +6,7 @@ const { spacing } = defaultTheme;
 export const Box = styled.div`
   border-radius: 4px;
   background: white;
-  width: 270px;
-
-  > img {
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-  }
+  width: 240px;
 `;
 
 export const Details = styled.div`

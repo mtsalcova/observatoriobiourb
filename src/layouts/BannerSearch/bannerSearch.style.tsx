@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Box = styled.main`
   background-color: ${({ theme }) => theme.palette.secondary.dark};
-  min-height: 600px;
+  min-height: 650px;
   display: flex;
   align-items: center;
   justify-content: center;

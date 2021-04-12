@@ -7,5 +7,8 @@ module.exports = withPWA({
   pwa: {
     dest: 'public',
     disable: !isProd
+  },
+  images: {
+    domains: ['instagram.fsod8-1.fna.fbcdn.net']
   }
 });

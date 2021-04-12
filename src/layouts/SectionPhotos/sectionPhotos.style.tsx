@@ -3,7 +3,7 @@ import { Wrapper as WrapperCore } from 'components';
 import defaultTheme from 'styles/defaultTheme';
 import Typography from '@material-ui/core/Typography';
 
-const { spacing } = defaultTheme;
+const { spacing, palette } = defaultTheme;
 
 export const Subtitle = styled(Typography)`
   && {
@@ -12,7 +12,7 @@ export const Subtitle = styled(Typography)`
 `;
 
 export const Box = styled.section`
-  background-color: ${({ theme }) => theme.palette.primary.dark};
+  background-color: ${palette.primary.dark};
   padding: ${spacing(20)}px 0;
   width: 100%;
 `;
@@ -37,4 +37,10 @@ export const Photos = styled.div`
   > div {
     margin-bottom: ${spacing(6)}px;
   }
+`;
+
+export const ActionBox = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
 `;
