@@ -6,6 +6,7 @@ import {
   SectionLatestNews,
   SectionPhotos
 } from 'layouts';
+import { GetStaticProps } from 'next';
 
 interface Props {
   posts: [
