@@ -10,7 +10,7 @@ const PolaroidPhoto = ({ imageSrc, link }: Props) => {
   return (
     <a href={link} target="_blank" rel="noreferrer">
       <Box>
-        <Image src={imageSrc} width={240} height={240} />
+        <img src={imageSrc} width={240} height={240} />
         {/* <Details>
             <strong>@mtsalcova</strong>
           </Details> */}

@@ -12,7 +12,8 @@ module.exports = withPWA({
     domains: [
       'instagram.fsod8-1.fna.fbcdn.net',
       'via.placeholder.com',
-      'scontent-sea1-1.cdninstagram.com'
+      'scontent-sea1-1.cdninstagram.com',
+      'scontent-iad3-2.cdninstagram.com'
     ]
   }
 });
