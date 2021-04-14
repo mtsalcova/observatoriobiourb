@@ -12,7 +12,7 @@ module.exports = withPWA({
     domains: [
       'instagram.fsod8-1.fna.fbcdn.net',
       'via.placeholder.com',
-      'observatoriobiourb.vercel.app'
+      'scontent-sea1-1.cdninstagram.com'
     ]
   }
 });
