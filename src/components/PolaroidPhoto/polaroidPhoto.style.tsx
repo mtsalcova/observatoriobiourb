@@ -5,7 +5,6 @@ const { spacing } = defaultTheme;
 
 export const Box = styled.div`
   border-radius: 4px;
-  background: white;
   width: 240px;
 `;
 

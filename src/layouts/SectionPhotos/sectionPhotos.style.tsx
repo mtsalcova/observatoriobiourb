@@ -29,13 +29,17 @@ export const Wrapper = styled(WrapperCore)`
 
 export const Photos = styled.div`
   margin: ${spacing(20)}px 0;
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
-  justify-content: space-between;
+  grid-template-columns:
+    minmax(auto, 240px) minmax(auto, 240px) minmax(auto, 240px)
+    minmax(auto, 240px);
+  justify-content: center;
+  grid-gap: ${spacing(6)}px;
   width: 100%;
 
-  > div {
-    margin-bottom: ${spacing(6)}px;
+  img {
+    display: block;
   }
 `;
 

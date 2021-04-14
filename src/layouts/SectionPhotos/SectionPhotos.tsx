@@ -18,7 +18,6 @@ interface Props {
 }
 
 const SectionPhotos = ({ posts }: Props) => {
-  console.log(posts);
   return (
     <Box>
       <Wrapper>
