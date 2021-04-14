@@ -7,6 +7,8 @@ import {
   BoxActions
 } from './sectionLatestNews.style';
 
+import Link from 'next/link';
+
 const SectionLatestNews = () => {
   return (
     <Box>
@@ -26,9 +28,11 @@ const SectionLatestNews = () => {
           />
         </BoxNews>
         <BoxActions>
-          <Button variant="outlined" color="secondary">
-            Saiba mais
-          </Button>
+          <Link href="/noticias" passHref>
+            <Button variant="outlined" color="secondary">
+              Saiba mais
+            </Button>
+          </Link>
         </BoxActions>
       </Wrapper>
     </Box>

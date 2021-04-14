@@ -1,6 +1,6 @@
 import { PhotosTemplate } from 'templates';
-import Instagram from 'instagram-web-api';
 import { GetStaticProps } from 'next';
+import { getPhotosByHashtagInstagram } from 'helpers';
 
 interface Props {
   posts: [
@@ -19,25 +19,8 @@ export default function Fotos({ posts }: Props) {
 }
 
 export async function getStaticProps(context: GetStaticProps) {
-  const client = new Instagram({
-    username: 'fotos.obs',
-    password: 'senhafotos11'
-  });
-
-  await client.login();
-
-  const response = await client.getPhotosByHashtag({
-    hashtag: 'observatoriobiourb',
-    first: 20
-  });
-
-  const { hashtag } = response;
-  const { edge_hashtag_to_media } = hashtag;
-  const { edges } = edge_hashtag_to_media;
-
+  const data = getPhotosByHashtagInstagram(1);
   return {
-    props: {
-      posts: edges
-    }
+    props: { ...data }
   };
 }

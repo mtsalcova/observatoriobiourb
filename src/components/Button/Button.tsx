@@ -1,17 +1,13 @@
-import ButtonCore from '@material-ui/core/Button';
+import { Button as ButtonCore, ButtonProps } from '@material-ui/core';
 
-interface Props {
-  color?: any;
-  variant?: any;
-}
-
-const Button: React.FC<Props> = ({
+const Button: React.FC<ButtonProps> = ({
   color = 'primary',
   variant = 'contained',
-  children
+  children,
+  ...props
 }) => {
   return (
-    <ButtonCore variant={variant} color={color}>
+    <ButtonCore {...props} variant={variant} color={color}>
       {children}
     </ButtonCore>
   );

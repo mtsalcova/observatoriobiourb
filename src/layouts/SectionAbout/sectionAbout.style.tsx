@@ -11,7 +11,7 @@ export const Box = styled.section`
 
 export const Subtitle = styled(Typography)`
   && {
-    margin-bottom: ${spacing(1)}px;
+    line-height: 0.8;
   }
 `;
 

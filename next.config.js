@@ -9,6 +9,10 @@ module.exports = withPWA({
     disable: !isProd
   },
   images: {
-    domains: ['instagram.fsod8-1.fna.fbcdn.net']
+    domains: [
+      'instagram.fsod8-1.fna.fbcdn.net',
+      'via.placeholder.com',
+      'observatoriobiourb.vercel.app'
+    ]
   }
 });

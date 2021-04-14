@@ -1,5 +1,5 @@
-import { Button } from 'components';
 import { Box, Wrapper, TextBox, Subtitle } from './sectionAbout.style';
+import { Button } from '@material-ui/core';
 import Link from 'next/link';
 
 const SectionAbout = () => {
@@ -20,7 +20,9 @@ const SectionAbout = () => {
             biodiversidade.
           </p>
           <Link href="/sobre">
-            <Button>Saiba mais</Button>
+            <Button color="primary" variant="contained">
+              Saiba mais
+            </Button>
           </Link>
         </TextBox>
       </Wrapper>

@@ -7,7 +7,18 @@ import {
 } from './sectionPhotos.style';
 import { PolaroidPhoto, Button } from 'components';
 
-const SectionPhotos = () => {
+import Link from 'next/link';
+
+interface Props {
+  posts: [
+    {
+      node: any;
+    }
+  ];
+}
+
+const SectionPhotos = ({ posts }: Props) => {
+  console.log(posts);
   return (
     <Box>
       <Wrapper>
@@ -18,19 +29,22 @@ const SectionPhotos = () => {
           Use a hashtag <strong>#observatoriobiourb</strong> no Instagram
         </p>
         <Photos>
-          {/* <PolaroidPhoto />
-          <PolaroidPhoto />
-          <PolaroidPhoto />
-          <PolaroidPhoto />
-          <PolaroidPhoto />
-          <PolaroidPhoto />
-          <PolaroidPhoto />
-          <PolaroidPhoto /> */}
+          {posts.map(({ node }, i) => {
+            return (
+              <PolaroidPhoto
+                imageSrc={node.thumbnail_resources[2].src}
+                link={node.display_url}
+                key={i}
+              />
+            );
+          })}
         </Photos>
         <ActionBox>
-          <Button variant="outlined" color="secondary">
-            Veja mais
-          </Button>
+          <Link href="/fotos" passHref>
+            <Button variant="outlined" color="secondary">
+              Veja mais
+            </Button>
+          </Link>
         </ActionBox>
       </Wrapper>
     </Box>
