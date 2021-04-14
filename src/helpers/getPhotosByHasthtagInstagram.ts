@@ -4,7 +4,6 @@ export const getPhotosByHashtagInstagram = (quantity: number) => {
   let edges;
 
   if (process.env.NODE_ENV === 'production') {
-    console.log('caiu aqui');
     edges = getPhotosFromInstagram(quantity);
   } else {
     edges = getPhotosFromMock();
