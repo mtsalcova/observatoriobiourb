@@ -1,13 +1,13 @@
 import Instagram from 'instagram-web-api';
 
 export const getPhotosByHashtagInstagram = async (quantity: number) => {
-  // let edges;
+  let edges;
 
-  // if (process.env.NODE_ENV === 'production') {
-  const edges = await getPhotosFromInstagram(quantity);
-  // } else {
-  //   edges = getPhotosFromMock();
-  // }
+  if (process.env.NODE_ENV === 'production') {
+    edges = await getPhotosFromInstagram(quantity);
+  } else {
+    edges = getPhotosFromMock();
+  }
 
   return {
     posts: edges

@@ -11,16 +11,13 @@ interface Props {
 }
 
 export default function Fotos({ posts }: Props) {
-  return (
-    <>
-      <PhotosTemplate posts={posts} />
-    </>
-  );
+  return <PhotosTemplate posts={posts} />;
 }
 
 export async function getStaticProps(context: GetStaticProps) {
   const data = await getPhotosByHashtagInstagram(20);
   return {
-    props: { ...data }
+    props: { ...data },
+    revalidate: 3600
   };
 }
