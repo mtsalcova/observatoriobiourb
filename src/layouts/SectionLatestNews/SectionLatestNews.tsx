@@ -20,11 +20,17 @@ const SectionLatestNews = () => {
           <ImageMediaCard
             title="Lorem Ipsum"
             paragraph="test uhsdiuhas aiudhsudh hasiudhsauidh"
+            link=""
           />
-          <ImageMediaCard title="Lorem Ipsum" paragraph="test uhsdiuhas aiud" />
+          <ImageMediaCard
+            title="Lorem Ipsum"
+            paragraph="test uhsdiuhas aiud"
+            link=""
+          />
           <ImageMediaCard
             title="Lorem Ipsum"
             paragraph="test uhsdiuhas aiudhsudh hasiudhsauidh asdd asdsadddasd"
+            link=""
           />
         </BoxNews>
         <BoxActions>
