@@ -46,7 +46,6 @@
     "lint-staged": "^10.5.4",
     "prettier": "2.2.1",
     "styled-components": "^5.2.1",
-    "tough-cookie-filestore2": "^1.0.0",
     "typescript": "^4.2.3"
   }
 }

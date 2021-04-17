@@ -1,5 +1,4 @@
 import Instagram from 'instagram-web-api';
-import FileCookieStore from 'tough-cookie-filestore2';
 
 export const getPhotosByHashtagInstagram = async (quantity: number) => {
   let edges;
@@ -16,12 +15,9 @@ export const getPhotosByHashtagInstagram = async (quantity: number) => {
 };
 
 async function getPhotosFromInstagram(quantity: number) {
-  const cookieStore = new FileCookieStore('./cookies.json');
-
   const client = new Instagram({
     username: 'fotos.obs',
-    password: 'senhafotos11',
-    cookieStore
+    password: 'senhafotos11'
   });
 
   await client.login();
