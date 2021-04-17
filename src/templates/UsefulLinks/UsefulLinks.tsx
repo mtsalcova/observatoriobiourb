@@ -92,38 +92,47 @@ const UsefulLinks = () => {
             <ImageMediaCard
               title="Parque da Água Vermelha"
               paragraph="test uhsdiuhas aiudhsudh hasiudhsauidh"
+              link=""
             />
             <ImageMediaCard
               title="Lorem Ipsum"
               paragraph="test uhsdiuhas aiudhsudh hasiudhsauidh"
+              link=""
             />
             <ImageMediaCard
               title="Lorem Ipsum"
               paragraph="test uhsdiuhas aiudhsudh hasiudhsauidh"
+              link=""
             />
             <ImageMediaCard
               title="Lorem Ipsum"
               paragraph="test uhsdiuhas aiudhsudh hasiudhsauidh"
+              link=""
             />
             <ImageMediaCard
               title="Lorem Ipsum"
               paragraph="test uhsdiuhas aiudhsudh hasiudhsauidh"
+              link=""
             />
             <ImageMediaCard
               title="Lorem Ipsum"
               paragraph="test uhsdiuhas aiudhsudh hasiudhsauidh"
+              link=""
             />
             <ImageMediaCard
               title="Lorem Ipsum"
               paragraph="test uhsdiuhas aiudhsudh hasiudhsauidh"
+              link=""
             />
             <ImageMediaCard
               title="Lorem Ipsum"
               paragraph="test uhsdiuhas aiudhsudh hasiudhsauidh"
+              link=""
             />
             <ImageMediaCard
               title="Lorem Ipsum"
               paragraph="test uhsdiuhas aiudhsudh hasiudhsauidh"
+              link=""
             />
           </BoxParks>
         </Wrapper>

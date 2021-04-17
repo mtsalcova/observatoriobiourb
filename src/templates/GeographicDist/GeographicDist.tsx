@@ -1,9 +1,10 @@
 import { Header, Footer, AboveTheFold, Title } from 'components';
 import { Content } from './geographicDist.style';
 import { SearchGeographicDist } from 'layouts';
+import { ComponentType } from 'react';
 
 interface Props {
-  Map: React.ReactNode;
+  Map: ComponentType;
 }
 
 const GeographicDistTemplate = ({ Map }: Props) => {
