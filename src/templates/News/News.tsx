@@ -1,5 +1,10 @@
-import { Header, Footer, AboveTheFold, ImageMediaCard } from 'components';
-import { Typography } from '@material-ui/core';
+import {
+  Header,
+  Footer,
+  AboveTheFold,
+  ImageMediaCard,
+  Title
+} from 'components';
 import { Content } from './news.style';
 
 const NewsTemplate = () => {
@@ -7,20 +12,27 @@ const NewsTemplate = () => {
     <>
       <Header />
       <AboveTheFold>
-        <Typography variant="h1" color="textPrimary">
+        <Title type="title" variant="h1" colorCustom="#fff">
           Notícias
-        </Typography>
+        </Title>
       </AboveTheFold>
       <Content>
         <ImageMediaCard
-          title="Lorem Ipsum"
-          paragraph=" ajsidasio hauisdhuaishd ahsiudhasiudhas haisudhasiudhasui hasidhasiudhas asiudhasiudhsaiuh haidhiusa hduias dh"
+          title="Adote uma Praça: espaços públicos de Sorocaba podem ser adotados!"
+          paragraph="A Prefeitura de Sorocaba, por meio da Secretaria do Meio Ambiente (Sema), incentiva a adoção de espaços públicos, por meio do programa Adote uma Praça."
+          link="http://noticias.sorocaba.sp.gov.br/adote-uma-praca-espacos-publicos-de-sorocaba-podem-ser-adotados"
         />
+        <ImageMediaCard
+          title="Procurador do TCU pede afastamento de Salles do Ministério do Meio Ambiente"
+          paragraph="O procurador do Ministério Público junto ao Tribunal de Contas da União (TCU), Lucas Rocha Furtado, pediu à corte de contas que determine à Casa Civil de Jair Bolsonaro o afastamento cautelar do ministro do Meio Ambiente, Ricardo Salles, de suas funções. "
+          link="https://blogs.oglobo.globo.com/malu-gaspar/post/procurador-do-mp-de-contas-pedira-ao-tcu-afastamento-de-salles-do-ministerio-do-meio-ambiente.html"
+        />
+
+        {/* <ImageMediaCard title="Lorem Ipsum" />
         <ImageMediaCard title="Lorem Ipsum" />
         <ImageMediaCard title="Lorem Ipsum" />
         <ImageMediaCard title="Lorem Ipsum" />
-        <ImageMediaCard title="Lorem Ipsum" />
-        <ImageMediaCard title="Lorem Ipsum" />
+        <ImageMediaCard title="Lorem Ipsum" /> */}
       </Content>
       <Footer />
     </>

@@ -1,5 +1,4 @@
-import { Header, Footer, AboveTheFold, RaisedBox } from 'components';
-import { Typography } from '@material-ui/core';
+import { Header, Footer, AboveTheFold, Title } from 'components';
 import { Content } from './about.style';
 
 const AboutTemplate = () => {
@@ -7,9 +6,9 @@ const AboutTemplate = () => {
     <>
       <Header />
       <AboveTheFold>
-        <Typography variant="h1" color="textPrimary">
+        <Title type="title" variant="h1" colorCustom="#fff">
           Sobre nós
-        </Typography>
+        </Title>
       </AboveTheFold>
       <Content>
         <p>

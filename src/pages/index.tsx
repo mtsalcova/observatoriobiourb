@@ -32,7 +32,6 @@ export default function Home({ posts }: Props) {
 export async function getStaticProps(context: GetStaticProps) {
   const data = await getPhotosByHashtagInstagram(4);
   return {
-    props: { ...data },
-    revalidate: 3600
+    props: { ...data }
   };
 }

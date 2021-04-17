@@ -1,5 +1,4 @@
-import { Header, Footer, AboveTheFold } from 'components';
-import { Typography } from '@material-ui/core';
+import { Header, Footer, AboveTheFold, Title } from 'components';
 import { Content } from './downloads.style';
 
 const DownloadsTemplate = () => {
@@ -7,9 +6,9 @@ const DownloadsTemplate = () => {
     <>
       <Header />
       <AboveTheFold>
-        <Typography variant="h1" color="textPrimary">
+        <Title type="title" variant="h1" colorCustom="#fff">
           Downloads
-        </Typography>
+        </Title>
       </AboveTheFold>
       <Content></Content>
       <Footer />

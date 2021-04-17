@@ -1,15 +1,8 @@
 import styled from 'styled-components';
 import { Wrapper as WrapperCore } from 'components';
 import defaultTheme from 'styles/defaultTheme';
-import Typography from '@material-ui/core/Typography';
 
 const { spacing, palette } = defaultTheme;
-
-export const Subtitle = styled(Typography)`
-  && {
-    margin-bottom: ${spacing(1)}px;
-  }
-`;
 
 export const Box = styled.section`
   background-color: ${palette.primary.dark};

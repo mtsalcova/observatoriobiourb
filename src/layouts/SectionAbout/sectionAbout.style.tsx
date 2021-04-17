@@ -1,18 +1,11 @@
 import styled from 'styled-components';
 import { Wrapper as WrapperRoot } from 'components';
-import Typography from '@material-ui/core/Typography';
 import defaultTheme from 'styles/defaultTheme';
 
 const { spacing } = defaultTheme;
 
 export const Box = styled.section`
   width: 100%;
-`;
-
-export const Subtitle = styled(Typography)`
-  && {
-    line-height: 0.8;
-  }
 `;
 
 export const Wrapper = styled(WrapperRoot)`

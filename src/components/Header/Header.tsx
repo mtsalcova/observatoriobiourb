@@ -20,20 +20,22 @@ const Header = () => {
           </Link>
         </BoxLogo>
         <Menu>
-          <Link href="/sobre" passHref>
+          <Link href="/sobre">
             <MenuItem>Sobre</MenuItem>
           </Link>
-          <MenuItem href="#">Dist.Geográfica</MenuItem>
-          <Link href="/links-uteis" passHref>
+          <Link href="/distribuicao-geografica">
+            <MenuItem>Dist.Geográfica</MenuItem>
+          </Link>
+          <Link href="/links-uteis">
             <MenuItem>Links úteis</MenuItem>
           </Link>
-          <Link href="/noticias" passHref>
+          <Link href="/noticias">
             <MenuItem>Notícias</MenuItem>
           </Link>
-          <Link href="/downloads" passHref>
+          <Link href="/downloads">
             <MenuItem>Downloads</MenuItem>
           </Link>
-          <Link href="/fotos" passHref>
+          <Link href="/fotos">
             <MenuItem>Fotos</MenuItem>
           </Link>
           {/* <Button color="primary" variant="contained">

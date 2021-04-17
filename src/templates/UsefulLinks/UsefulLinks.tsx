@@ -6,7 +6,8 @@ import {
   Footer,
   AboveTheFold,
   Wrapper,
-  ImageMediaCard
+  ImageMediaCard,
+  Title
 } from 'components';
 
 const UsefulLinks = () => {
@@ -14,9 +15,9 @@ const UsefulLinks = () => {
     <>
       <Header />
       <AboveTheFold>
-        <Typography variant="h1" color="textPrimary">
+        <Title type="title" variant="h1" colorCustom="#fff">
           Links úteis
-        </Typography>
+        </Title>
       </AboveTheFold>
       <Content>
         <BoxLinks>
@@ -84,9 +85,9 @@ const UsefulLinks = () => {
 
       <SectionParks>
         <Wrapper>
-          <Typography variant="h2" color="textPrimary" align="center">
-            Parques do estado de São Paulo
-          </Typography>
+          <Title type="subtitle" variant="h2" align="center" colorCustom="#fff">
+            Parques do Estado de São Paulo
+          </Title>
           <BoxParks>
             <ImageMediaCard
               title="Parque da Água Vermelha"

@@ -2,7 +2,7 @@ import { ImageMediaCard, Button } from 'components';
 import {
   Box,
   Wrapper,
-  Subtitle,
+  Title,
   BoxNews,
   BoxActions
 } from './sectionLatestNews.style';
@@ -13,9 +13,9 @@ const SectionLatestNews = () => {
   return (
     <Box>
       <Wrapper>
-        <Subtitle variant="h2" color="textPrimary">
+        <Title type="subtitle" variant="h2" colorCustom="#fff">
           Últimas notícias
-        </Subtitle>
+        </Title>
         <BoxNews>
           <ImageMediaCard
             title="Lorem Ipsum"

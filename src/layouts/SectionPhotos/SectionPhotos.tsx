@@ -1,11 +1,5 @@
-import {
-  Box,
-  Subtitle,
-  Wrapper,
-  Photos,
-  ActionBox
-} from './sectionPhotos.style';
-import { PolaroidPhoto, Button } from 'components';
+import { Box, Wrapper, Photos, ActionBox } from './sectionPhotos.style';
+import { PolaroidPhoto, Button, Title } from 'components';
 
 import Link from 'next/link';
 
@@ -21,9 +15,9 @@ const SectionPhotos = ({ posts }: Props) => {
   return (
     <Box>
       <Wrapper>
-        <Subtitle variant="h2" color="textPrimary">
+        <Title type="subtitle" variant="h2" colorCustom="#fff">
           Fotos
-        </Subtitle>
+        </Title>
         <p>
           Use a hashtag <strong>#observatoriobiourb</strong> no Instagram
         </p>

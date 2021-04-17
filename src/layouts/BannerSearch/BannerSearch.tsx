@@ -15,11 +15,10 @@ const BannerSearch = () => {
           Seja bem vindo ao <br />
           Observatório da Biodiversidade Urbana!
         </Title>
-        <h2>Pesquise a distribuição geográfica de qualquer espécie:</h2>
-        <SearchItemForm>
-          <TextField label="Pesquisar" />
-          {/* <Button>Pesquisar</Button> */}
-        </SearchItemForm>
+        {/* <h2>Pesquise a distribuição geográfica de qualquer espécie:</h2> */}
+        {/* <SearchItemForm> */}
+        {/* <TextField label="Pesquisar" /> */}
+        {/* </SearchItemForm> */}
       </SearchItemBox>
     </Box>
   );

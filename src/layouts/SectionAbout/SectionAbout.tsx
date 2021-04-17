@@ -1,15 +1,16 @@
-import { Box, Wrapper, TextBox, Subtitle } from './sectionAbout.style';
+import { Box, Wrapper, TextBox } from './sectionAbout.style';
 import { Button } from '@material-ui/core';
 import Link from 'next/link';
+import { Title } from 'components';
 
 const SectionAbout = () => {
   return (
     <Box>
       <Wrapper>
         <TextBox>
-          <Subtitle variant="h2" color="textPrimary">
+          <Title type="subtitle" variant="h2" color="textPrimary">
             Sobre nós
-          </Subtitle>
+          </Title>
           <p>
             Somos uma plataforma digital que busca reunir todo conteúdo
             existente a respeito da biodiversidade urbana em todo o Brasil, a

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import defaultTheme from 'styles/defaultTheme';
-import { Wrapper as WrapperCore } from 'components';
-import Typography from '@material-ui/core/Typography';
+import { Wrapper as WrapperCore, Title as TitleCore } from 'components';
 
 const { spacing, palette } = defaultTheme;
 
@@ -15,7 +14,7 @@ export const Wrapper = styled(WrapperCore)`
   text-align: center;
 `;
 
-export const Subtitle = styled(Typography)`
+export const Title = styled(TitleCore)`
   && {
     margin-bottom: ${spacing(20)}px;
   }

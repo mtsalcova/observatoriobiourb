@@ -1,5 +1,4 @@
-import { Header, Footer, AboveTheFold, PolaroidPhoto } from 'components';
-import { Typography } from '@material-ui/core';
+import { Header, Footer, AboveTheFold, PolaroidPhoto, Title } from 'components';
 import { Content } from './photos.style';
 
 interface Props {
@@ -15,12 +14,12 @@ const PhotosTemplate = ({ posts }: Props) => {
     <>
       <Header />
       <AboveTheFold>
-        <Typography variant="h1" color="textPrimary">
+        <Title type="title" variant="h1" colorCustom="#fff">
           Fotos
-        </Typography>
-        <Typography variant="h5" color="textPrimary">
+        </Title>
+        <Title type="subtitle" variant="h5" colorCustom="#fff">
           Use a hashtag <strong>#observatoriobiourb</strong> no Instagram!
-        </Typography>
+        </Title>
       </AboveTheFold>
       <Content>
         {posts.map(({ node }, i) => {
