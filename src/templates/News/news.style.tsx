@@ -9,8 +9,9 @@ export const Content = styled(RaisedBoxRoot)`
   padding: 40px 20px !important;
   flex-wrap: wrap;
   margin-bottom: 100px;
+  align-items: stretch;
 
-  > div {
+  > a {
     margin-bottom: 20px;
   }
 `;

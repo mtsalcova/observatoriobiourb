@@ -1,5 +1,4 @@
 import { Link } from '@material-ui/core';
-import { Typography } from '@material-ui/core';
 import { Content, BoxLinks, BoxParks, SectionParks } from './usefulLinks.style';
 import {
   Header,
@@ -80,6 +79,9 @@ const UsefulLinks = () => {
           >
             Fundação Florestal
           </Link>
+          <Link href="http://www.cbro.org.br/" target="_blank">
+            CBRO - Comitê Brasileiro de Registros Ornitológicos
+          </Link>
         </BoxLinks>
       </Content>
 
@@ -90,49 +92,34 @@ const UsefulLinks = () => {
           </Title>
           <BoxParks>
             <ImageMediaCard
-              title="Parque da Água Vermelha"
-              paragraph="test uhsdiuhas aiudhsudh hasiudhsauidh"
-              link=""
+              title="Ibirapuera"
+              link="https://parqueibirapuera.org/"
+              image="/images/parks/parque-ibirapuera.jpg"
             />
             <ImageMediaCard
-              title="Lorem Ipsum"
-              paragraph="test uhsdiuhas aiudhsudh hasiudhsauidh"
-              link=""
+              title="Chico Mendes"
+              link="http://meioambiente.sorocaba.sp.gov.br/gestaoambiental/parque-natural-chico-mendes/"
+              image="/images/parks/parque-natural-chico-mendes.jpg"
             />
             <ImageMediaCard
-              title="Lorem Ipsum"
-              paragraph="test uhsdiuhas aiudhsudh hasiudhsauidh"
-              link=""
+              title="Villa-Lobos"
+              link="https://www.saopaulo.sp.gov.br/conhecasp/parques-e-reservas-naturais/parque-villa-lobos/"
+              image="/images/parks/parque-villa-lobos.jpg"
             />
             <ImageMediaCard
-              title="Lorem Ipsum"
-              paragraph="test uhsdiuhas aiudhsudh hasiudhsauidh"
-              link=""
+              title="Zoo. Quinzinho de Barros"
+              link="http://www.sorocaba.sp.gov.br/zoo/"
+              image="/images/parks/parque-zoológico-municipal-quinzinho-de-barros.jpg"
             />
             <ImageMediaCard
-              title="Lorem Ipsum"
-              paragraph="test uhsdiuhas aiudhsudh hasiudhsauidh"
-              link=""
+              title="Zoológico de São Paulo"
+              link="http://www.zoologico.com.br/"
+              image="/images/parks/zoológico-de-são-paulo.jpg"
             />
             <ImageMediaCard
-              title="Lorem Ipsum"
-              paragraph="test uhsdiuhas aiudhsudh hasiudhsauidh"
-              link=""
-            />
-            <ImageMediaCard
-              title="Lorem Ipsum"
-              paragraph="test uhsdiuhas aiudhsudh hasiudhsauidh"
-              link=""
-            />
-            <ImageMediaCard
-              title="Lorem Ipsum"
-              paragraph="test uhsdiuhas aiudhsudh hasiudhsauidh"
-              link=""
-            />
-            <ImageMediaCard
-              title="Lorem Ipsum"
-              paragraph="test uhsdiuhas aiudhsudh hasiudhsauidh"
-              link=""
+              title="Trilha dos Tucanos"
+              link="https://www.trilhadostucanos.com.br/"
+              image="/images/parks/trilha-dos-tucanos.jpg"
             />
           </BoxParks>
         </Wrapper>

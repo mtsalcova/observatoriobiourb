@@ -18,19 +18,22 @@ const SectionLatestNews = () => {
         </Title>
         <BoxNews>
           <ImageMediaCard
-            title="Lorem Ipsum"
-            paragraph="test uhsdiuhas aiudhsudh hasiudhsauidh"
-            link=""
+            title="Procurador do TCU pede afastamento de Salles do Ministério do Meio Ambiente"
+            paragraph="O procurador do Ministério Público junto ao Tribunal de Contas da União (TCU), Lucas Rocha Furtado, pediu à corte de contas que determine à Casa Civil de Jair Bolsonaro o afastamento cautelar do ministro do Meio Ambiente, Ricardo Salles, de suas funções."
+            link="https://blogs.oglobo.globo.com/malu-gaspar/post/procurador-do-mp-de-contas-pedira-ao-tcu-afastamento-de-salles-do-ministerio-do-meio-ambiente.html"
+            image="/images/news/image_2021-04-15_at_22.47.58.jpeg"
           />
           <ImageMediaCard
-            title="Lorem Ipsum"
-            paragraph="test uhsdiuhas aiud"
-            link=""
+            title="Sustentabilidade é primordial para o desenvolvimento de São Paulo"
+            paragraph="No entanto, para Buckeridge, uma cidade sustentável não pode prescindir da diminuição da desigualdade"
+            link="https://www.institutodeengenharia.org.br/site/2020/02/12/sustentabilidade-e-primordial-para-o-desenvolvimento-de-sao-paulo/"
+            image="/images/news/sao-paulo.jpeg"
           />
           <ImageMediaCard
-            title="Lorem Ipsum"
-            paragraph="test uhsdiuhas aiudhsudh hasiudhsauidh asdd asdsadddasd"
-            link=""
+            title="Epidemias aumentam quando biodiversidade declina, alerta estudo"
+            paragraph="A pesquisa oferece uma primeira visão global de como as mudanças na cobertura florestal potencialmente contribuem para doenças zoonóticas e transmitidas por vetores"
+            link="https://www.oc.eco.br/epidemias-aumentam-quando-biodiversidade-declina-alerta-estudo/"
+            image="/images/news/virus.jpeg"
           />
         </BoxNews>
         <BoxActions>
