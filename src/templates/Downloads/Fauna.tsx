@@ -70,33 +70,6 @@ const Fauna = () => {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          Invertebrados
-        </AccordionSummary>
-        <AccordionDetails style={{ flexWrap: 'wrap' }}>
-          <DownloadItem
-            title="Ocorrência de um molusco invasor"
-            link="https://drive.google.com/file/d/1O2ZfNfTgHahXlKBBuMCyaDdcx1PqfSqv/view?usp=sharing"
-          />
-          <DownloadItem
-            title="Inventário da biodiversidade de lacraias (Arthropoda, Chilopoda)"
-            link="https://drive.google.com/file/d/1MkzlTSKe6LXCuKYNLPnNqqDUgczIMs1c/view?usp=sharing"
-          />
-          <DownloadItem
-            title="Fauna de besouros bioluminescentes"
-            link="https://drive.google.com/file/d/1oUFE8FN0-AU0gflbqFpd0_byN6CWWlLL/view?usp=sharing"
-          />
-          <DownloadItem
-            title="Dipterofauna de fragmentos vegetacionais da UFSCar - campus Sorocaba, SP, Brasil."
-            link="https://drive.google.com/file/d/1NeInTaLTMcUdn59Bx2p8zLZsN4tRmCDi/view?usp=sharing"
-          />
-        </AccordionDetails>
-      </Accordion>
-      <Accordion>
-        <AccordionSummary
-          // expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
           Aves
         </AccordionSummary>
         <AccordionDetails style={{ flexWrap: 'wrap' }}>
@@ -123,6 +96,33 @@ const Fauna = () => {
           <DownloadItem
             title="Aves do Rio Sorocaba"
             link="https://drive.google.com/file/d/1DYSI1pqkomf30_Zg6qtKBDWtmVEhSaZI/view?usp=sharing"
+          />
+        </AccordionDetails>
+      </Accordion>
+      <Accordion>
+        <AccordionSummary
+          // expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          Invertebrados
+        </AccordionSummary>
+        <AccordionDetails style={{ flexWrap: 'wrap' }}>
+          <DownloadItem
+            title="Ocorrência de um molusco invasor"
+            link="https://drive.google.com/file/d/1O2ZfNfTgHahXlKBBuMCyaDdcx1PqfSqv/view?usp=sharing"
+          />
+          <DownloadItem
+            title="Inventário da biodiversidade de lacraias (Arthropoda, Chilopoda)"
+            link="https://drive.google.com/file/d/1MkzlTSKe6LXCuKYNLPnNqqDUgczIMs1c/view?usp=sharing"
+          />
+          <DownloadItem
+            title="Fauna de besouros bioluminescentes"
+            link="https://drive.google.com/file/d/1oUFE8FN0-AU0gflbqFpd0_byN6CWWlLL/view?usp=sharing"
+          />
+          <DownloadItem
+            title="Dipterofauna de fragmentos vegetacionais da UFSCar - campus Sorocaba, SP, Brasil."
+            link="https://drive.google.com/file/d/1NeInTaLTMcUdn59Bx2p8zLZsN4tRmCDi/view?usp=sharing"
           />
         </AccordionDetails>
       </Accordion>

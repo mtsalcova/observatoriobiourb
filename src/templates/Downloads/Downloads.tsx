@@ -181,10 +181,6 @@ const DownloadsTemplate = () => {
             link="https://drive.google.com/file/d/15MjcnwO4CciVNoE5JUqthkmtQ2DC_LTm/view?usp=sharing"
           />
           <DownloadItem
-            title="Herpetologia Brasileira - Volume 7 Número 1"
-            link="https://drive.google.com/file/d/15MjcnwO4CciVNoE5JUqthkmtQ2DC_LTm/view?usp=sharing"
-          />
-          <DownloadItem
             title="Lei: Refúgios da Biodiversidade no Município de Sorocaba"
             link="https://drive.google.com/file/d/1aShhgs9bKdOdh-93YePu4Sd2CXkEKRLw/view?usp=sharing"
           />
