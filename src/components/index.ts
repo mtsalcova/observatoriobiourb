@@ -9,3 +9,5 @@ export * from './Footer/Footer';
 export * from './AboveTheFold/AboveTheFold';
 export * from './PageContainer/PageContainer';
 export * from './RaisedBox/RaisedBox';
+export * from './TabPanel/TabPanel';
+export * from './DownloadItem/DownloadItem';

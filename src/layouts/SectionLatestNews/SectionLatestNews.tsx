@@ -39,7 +39,7 @@ const SectionLatestNews = () => {
         <BoxActions>
           <Link href="/noticias" passHref>
             <Button variant="outlined" color="secondary">
-              Saiba mais
+              Veja mais
             </Button>
           </Link>
         </BoxActions>
