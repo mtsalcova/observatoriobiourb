@@ -109,12 +109,12 @@ const UsefulLinks = () => {
             <ImageMediaCard
               title="Zoo. Quinzinho de Barros"
               link="http://www.sorocaba.sp.gov.br/zoo/"
-              image="/images/parks/parque-zoológico-municipal-quinzinho-de-barros.jpg"
+              image="/images/parks/parque-zoologico-municipal-quinzinho-de-barros.jpg"
             />
             <ImageMediaCard
               title="Zoológico de São Paulo"
               link="http://www.zoologico.com.br/"
-              image="/images/parks/zoológico-de-são-paulo.jpg"
+              image="/images/parks/zoologico-de-sao-paulo.jpg"
             />
             <ImageMediaCard
               title="Trilha dos Tucanos"
