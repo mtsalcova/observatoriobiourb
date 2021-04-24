@@ -1,10 +1,8 @@
 import { Header, Footer, AboveTheFold, Title } from 'components';
-import { Content } from './geographicDist.style';
-import { SearchGeographicDist } from 'layouts';
-import { ComponentType } from 'react';
+import { MapContainer } from './MapContainer';
 
 interface Props {
-  Map: ComponentType;
+  Map: any;
 }
 
 const GeographicDistTemplate = ({ Map }: Props) => {
@@ -16,10 +14,7 @@ const GeographicDistTemplate = ({ Map }: Props) => {
           Distribuição Geográfica
         </Title>
       </AboveTheFold>
-      <Content>
-        <SearchGeographicDist />
-      </Content>
-      <Map />
+      <MapContainer Map={Map} />
       <Footer />
     </>
   );

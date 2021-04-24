@@ -9,7 +9,7 @@ export const Box = styled.div`
 
 export const Form = styled.form`
   display: flex;
-  justify-content: start;
+  justify-content: center;
   margin-top: 20px;
   width: 100%;
 
