@@ -19,7 +19,7 @@ async function getPhotosFromInstagram(quantity: number) {
   const cookieStore = new FileCookieStore('/cookies.json');
   const client = new Instagram({
     username: 'fotos.obs',
-    password: 'senhafotos11',
+    password: 'cuniculariaathene321',
     cookieStore
   });
 
