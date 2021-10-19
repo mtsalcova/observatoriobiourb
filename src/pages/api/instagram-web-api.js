@@ -1,11 +1,12 @@
 import nc from 'next-connect';
 
 const handler = nc().get(async (req, res) => {
-  const imageUrl = req.url.replace('/api/instagram-web-api?src=', '');
+  const url = new URL(req.url);
+  let imageUrl = url.searchParams.get('src');
   req = new Request(imageUrl, {
     method: 'GET',
     headers: {
-      Origin: new URL(imageUrl).origin
+      Origin: url.origin
     }
   });
 
