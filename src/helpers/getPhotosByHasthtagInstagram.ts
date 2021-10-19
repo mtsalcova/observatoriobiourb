@@ -1,13 +1,13 @@
 import Instagram from 'instagram-web-api';
 
 export const getPhotosByHashtagInstagram = async (quantity: number) => {
-  let edges;
+  // let edges;
 
-  if (process.env.NODE_ENV === 'production') {
-    edges = await getPhotosFromInstagram(quantity);
-  } else {
-    edges = getPhotosFromMock();
-  }
+  // edges = await getPhotosFromInstagram(quantity);
+  // if (process.env.NODE_ENV === 'production') {
+  // } else {
+  const edges = getPhotosFromMock();
+  // }
 
   return {
     posts: edges
@@ -35,18 +35,21 @@ async function getPhotosFromInstagram(quantity: number) {
 }
 
 function getPhotosFromMock() {
-  return [
-    {
+  const dataMock = [];
+
+  for (let i = 1; i <= 12; i++) {
+    dataMock.push({
       node: {
         thumbnail_resources: [
           0,
           1,
           {
-            src: 'https://via.placeholder.com/240x240'
+            src: `/images/fotos/foto${i}.jpeg`
           }
-        ],
-        display_url: 'https://via.placeholder.com/240x240'
+        ]
       }
-    }
-  ];
+    });
+  }
+
+  return dataMock;
 }
