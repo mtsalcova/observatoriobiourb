@@ -25,7 +25,7 @@ const PhotosTemplate = ({ posts }: Props) => {
         {posts.map(({ node }, i) => {
           return (
             <PolaroidPhoto
-              imageSrc={node.thumbnail_resources[2].src}
+              imageSrc={`/api/instagram-web-api?src=${node.thumbnail_resources[2].src}`}
               link={node.display_url}
               key={i}
             />

@@ -3,8 +3,6 @@ import { Link as MenuItem } from '@material-ui/core';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { Button } from 'components';
-
 const Header = () => {
   return (
     <Box>

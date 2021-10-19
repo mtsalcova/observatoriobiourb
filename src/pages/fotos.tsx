@@ -17,6 +17,7 @@ export default function Fotos({ posts }: Props) {
 export async function getStaticProps(context: GetStaticProps) {
   const data = await getPhotosByHashtagInstagram(20);
   return {
-    props: { ...data }
+    props: { ...data },
+    revalidate: 18000
   };
 }
