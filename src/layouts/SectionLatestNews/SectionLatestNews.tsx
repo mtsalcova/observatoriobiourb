@@ -30,10 +30,10 @@ const SectionLatestNews = () => {
             image="/images/news/ave-marinha-anilhada.jpeg"
           />
           <ImageMediaCard
-            title="Dez cidades vão receber ecopontos para coleta de lixo eletroeletrônico até novembro"
-            paragraph="A meta é que 400 cidades brasileiras tenham sistema implementado até 2025"
-            link="https://www.gov.br/pt-br/noticias/meio-ambiente-e-clima/2021/09/dez-cidades-vao-receber-ecopontos-para-coleta-de-lixo-eletroeletronico-ate-novembro"
-            image="/images/news/ecopontos.jpeg"
+            title="Avanço do mar saliniza rio Amazonas e deixa comunidades em estado de emergência"
+            paragraph="Para pesquisador, fenômeno pode estar relacionado ao aumento global do nível do mar e a atividades humanas que contribuíram com o assoreamento de um importante rio na região."
+            link="https://g1.globo.com/meio-ambiente/noticia/2021/10/19/avanco-do-mar-saliniza-rio-amazonas-e-deixa-comunidades-em-estado-de-emergencia.ghtml"
+            image="/images/news/surf.jpeg"
           />
         </BoxNews>
         <BoxActions>
